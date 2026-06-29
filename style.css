@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.search input{
+    flex: 1;
+    height: 60px;
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    color: #555;
+    border-radius: 30px;
+    padding: 0 25px;
+    font-size: 18px;
+}
+
+.search button{
+    width: 60px;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background: #ebfffc;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.search button:hover{
+    background: #d9f5f2;
+    transform: scale(1.05);
+}
+
+.search button img{
+    width: 18px;
+}
+
+.weather{
+    margin-top: 30px;
+}
+
+.weather-icon{
+    width: 170px;
+    margin-bottom: 15px;
+}
+
+.weather h1{
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.weather h2{
+    font-size: 38px;
+    font-weight: 400;
+    margin-top: -8px;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.cols{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    flex: 1;
+}
+
+.cols img{
+    width: 45px;
+    margin-right: 12px;
+}
+
+.humidity,
+.wind{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.cols p:last-child{
+    font-size: 16px;
+    color: #f5f5f5;
+}
+
+.weather{
+    display:none;
+}
+.error{
+    text-align:left ;
+    margin-left:10px;
+    font-size: 14px;
+    margin-top:10px;
+    display:none;
+}
